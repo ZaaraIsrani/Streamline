@@ -1,10 +1,7 @@
 'use client';
 
-import { Inter } from 'next/font/google'
 import { useEffect, useState, FormEvent } from 'react'
 import { trackPageView, trackFeatureInterest, trackSignup } from '../lib/supabase';
-
-const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   const [email, setEmail] = useState('');
@@ -102,7 +99,7 @@ export default function Home() {
             Find your perfect sound - Faster!
           </h2>
           <p className="hero-description">
-            Tell us what you're creating, and we'll recommend the perfect sounds based on your vision, speed, and genre.
+            Tell us what you&apos;re creating, and we&apos;ll recommend the perfect sounds based on your vision, speed, and genre.
           </p>
           <div className="hero-buttons">
             <a 
@@ -139,7 +136,7 @@ export default function Home() {
               </div>
               <h3 className="feature-title">Share Your Vision</h3>
               <p className="feature-description">
-                Tell us about your project's mood, genre, and the emotions you want to evoke.
+                Tell us about your project&apos;s mood, genre, and the emotions you want to evoke.
               </p>
             </div>
 
@@ -154,7 +151,7 @@ export default function Home() {
               </div>
               <h3 className="feature-title">Define Your Sound</h3>
               <p className="feature-description">
-                Specify tempo, energy, and any unique sound characteristics you're looking for.
+                Specify tempo, energy, and any unique sound characteristics you&apos;re looking for.
               </p>
             </div>
 
