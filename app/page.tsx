@@ -181,20 +181,20 @@ export default function Home() {
             Be the first to try our sound recommendation tool—sign up to receive early access and updates.
           </p>
           <form 
-            className="flex flex-col sm:flex-row gap-4 justify-center items-center"
+            className="flex flex-col w-full max-w-md mx-auto gap-4 justify-center items-center"
             onSubmit={handleSubmit}
           >
             <input
               type="email"
               placeholder="Enter your email"
-              className="email-input"
+              className="email-input w-full"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
             />
             <button
               type="submit"
-              className="submit-button"
+              className="submit-button w-full sm:w-auto"
               disabled={isSubmitting}
             >
               {isSubmitting ? 'Signing Up...' : 'Sign Up'}
